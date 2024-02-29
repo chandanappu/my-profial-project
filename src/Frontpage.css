@@ -1,0 +1,113 @@
+.video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  /***** head *****/  
+  
+  
+container{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+.frontpageh1{
+    font-family: "Kode", Consolas, monospace;
+    font-size: 4em;
+    color: #ffe478;
+    
+        font-family: "Micro 5", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        transition: color 0.3s, text-shadow 0.3s;
+
+      
+}
+.frontpageh1:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
+}
+.typewriter{
+    position: relative;
+}
+.typewriter::after{
+    content: '>';
+    position: absolute;
+    right: 0;
+    color: hsl(0, 0%, 100%);
+    background-color: #000000;
+    width: 100%;
+    animation: typing 5s steps(18) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
+.frontpage_btn{
+    
+    justify-content: center;
+    z-index: 1;
+    color: hsl(0, 0%, 100%);;
+    background-color:#000000 ;
+    width: 20rem;
+    padding: 20px;
+    cursor: pointer;
+    transition: color 0.3s, text-shadow 0.3s;
+    border-radius:20px;
+
+
+
+
+}
+.frontpage_btn:hover .star {
+    animation-play-state: running; /* Resume animation on hover */
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+    
+}
+  
+  .star {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    color: #ffffff;
+    animation: starAnimation 0.5s infinite; /* Apply animation */
+    animation-play-state: paused; /* Pause animation by default */
+  }
+  
+  @keyframes starAnimation {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-5px);
+    }
+    100% {
+      transform: translateY(-2px);
+    }
+  }

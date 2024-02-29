@@ -1,0 +1,53 @@
+.cards{
+    display: flex;
+    flex-direction: row;
+}
+Card{
+    height: 50px;
+}
+.myprojects{
+font-family: "Micro 5", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+font-size:50px;}
+
+.text{
+    color: black;
+    
+}
+
+.dark {
+    position: relative;
+    background-color: #000000; /* Initial background color */
+    transition: background-color 0.3s ease; /* Smooth transition effect */
+}
+
+.dark::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: rgba(111, 108, 108, 0.2); /* Light black color with transparency */
+    animation: bubble 0.5s ease; /* Animation for bubble pop */
+    animation-fill-mode: forwards; /* Maintain the final state of animation */
+}
+
+@keyframes bubble {
+    0% {
+        transform: translate(-50%, 0) scale(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-50%, -100%) scale(1);
+        opacity: 0;
+    }
+}
+
+.dark:hover {
+    background-color: rgb(85, 84, 84); /* Color change on hover */
+    transform: scale(1.1); /* Optional: Increase size on hover */
+}
+

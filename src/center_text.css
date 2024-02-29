@@ -1,0 +1,39 @@
+.frontpageh1{
+    font-family: "Kode", Consolas, monospace;
+    font-size: 4em;
+    color: #ffe478;
+    
+        font-family: "Micro 5", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+        transition: color 0.3s, text-shadow 0.3s;
+
+      
+}
+.frontpageh1:hover{
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+
+}
+.typewriter{
+    position: relative;
+}
+.typewriter::after{
+    content: '>';
+    position: absolute;
+    right: 0;
+    color: hsl(0, 0%, 100%);
+    background-color: #000000;
+    width: 100%;
+    animation: typing 2s steps(25) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line {
+    50%{
+        color: transparent;
+    }
+}
