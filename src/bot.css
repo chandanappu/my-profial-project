@@ -1,0 +1,18 @@
+.dot {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+    animation: moveLeft 2s linear forwards; /* Adjust animation duration as needed */
+  }
+  
+  @keyframes moveLeft {
+    from {
+      left: -20px; /* Start position (off-screen) */
+    }
+    to {
+      left: calc(100% - 20px); /* End position (left side of the screen) */
+    }
+  }
+  

@@ -1,0 +1,80 @@
+.navlinks{
+    display: flex;
+    justify-content: end;
+}
+.navlinks {
+    margin-right: 100px;
+  }
+
+  .video-background {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1;
+  }
+  
+  .video-background video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    transform: translate(-50%, -50%);
+  }
+
+  .brand{
+    font-family: "Micro 5", sans-serif;
+  font-weight: 800;
+  font-size:25px ;
+  position: relative;
+  }
+
+  
+  .moving-arrow {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust the distance from the Brand to the arrow */
+    transform: translateY(-50%);
+    font-size: 40px;
+    animation: moveArrow 10s infinite alternate;
+    color: black;
+  }
+  
+  @keyframes moveArrow {
+    0% { left: calc(100% + 10px); }
+    100% { left: 0; } /* Move the arrow to the beginning */
+  }
+
+  .moving-arrows {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust the distance from the Brand to the arrow */
+    transform: translateY(-50%);
+    font-size: 40px;
+    animation: moveArrow 8s infinite alternate;
+    color: black;
+  }
+  
+  @keyframes moveArrows {
+    0% { left: calc(100% + 10px); }
+    100% { left: 0; } /* Move the arrow to the beginning */
+  }
+  .moving-star {
+    position: absolute;
+    top: 50%;
+    left: calc(100% + 10px); /* Adjust the distance from the Brand to the arrow */
+    transform: translateY(-50%);
+    font-size: 40px;
+    animation: moveArrow 4s infinite alternate;
+    color: black;
+  }
+  
+  @keyframes moveArrows {
+    0% { left: calc(100% + 10px); }
+    100% { left: 0; } /* Move the arrow to the beginning */
+  }
